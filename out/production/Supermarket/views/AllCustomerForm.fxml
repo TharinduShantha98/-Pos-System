@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="630.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllCustomerFormController">
+   <children>
+      <TableView fx:id="tblAllCustomer" layoutX="14.0" layoutY="186.0" prefHeight="381.0" prefWidth="689.0" style="-fx-border-color: #2ecc71; -fx-border-width: 2px 2px 2px 2px;">
+        <columns>
+          <TableColumn fx:id="colCusId" prefWidth="70.0" text="cusId" />
+          <TableColumn fx:id="colCusTitle" prefWidth="74.0" text="CusTitle" />
+            <TableColumn fx:id="colCusName" prefWidth="81.0" text="CusName" />
+            <TableColumn fx:id="coiCusAddress" prefWidth="117.0" text="CusAddress" />
+            <TableColumn fx:id="colCity" prefWidth="111.0" text="City" />
+            <TableColumn fx:id="colProvince" prefWidth="146.0" text="province" />
+            <TableColumn fx:id="colPostalCode" prefWidth="87.0" text="PostalCode" />
+        </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="20.0" prefHeight="49.0" prefWidth="267.0" text="All  Customer" textFill="#289009">
+         <font>
+            <Font name="Bodoni MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutY="77.0" prefHeight="2.0" prefWidth="709.0" />
+   </children>
+</AnchorPane>

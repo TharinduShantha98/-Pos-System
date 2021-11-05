@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="755.0" prefWidth="1059.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewDashBordFormController">
+   <children>
+      <ImageView fx:id="Customer" fitHeight="125.0" fitWidth="139.0" layoutX="377.0" layoutY="326.0" onMouseClicked="#navigate" onMouseEntered="#PlayMouseEntered" onMouseExited="#playMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/Images/customers.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="OrderMange" fitHeight="118.0" fitWidth="139.0" layoutX="560.0" layoutY="329.0" onMouseClicked="#navigate" onMouseEntered="#PlayMouseEntered" onMouseExited="#playMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/Images/orderManage.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="admin" fitHeight="118.0" fitWidth="139.0" layoutX="754.0" layoutY="330.0" onMouseClicked="#navigate2" onMouseEntered="#PlayMouseEntered" onMouseExited="#playMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/Images/admin.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="placeOrder" fitHeight="125.0" fitWidth="139.0" layoutX="188.0" layoutY="331.0" onMouseClicked="#navigate" onMouseEntered="#PlayMouseEntered" onMouseExited="#playMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/Images/placeOrder.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="-1.0" prefHeight="92.0" prefWidth="1060.0" style="-fx-background-color: #34495e;">
+         <children>
+            <Label fx:id="txtEnter" alignment="CENTER" layoutX="221.0" layoutY="14.0" text="SuperMarket KDS P.V.T" textFill="#3ae84e">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="54.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="297.0" layoutY="514.0" prefHeight="46.0" prefWidth="460.0" text="WELCOME" textFill="#1920b2">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="122.0" layoutY="592.0" prefHeight="33.0" prefWidth="835.0" text="Please select one of above main operations to proceed" textFill="#1920b2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="92.0" fitWidth="139.0" layoutX="61.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/Images/date.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="139.0" layoutX="745.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/Images/Clock.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate" layoutX="168.0" layoutY="131.0" prefHeight="50.0" prefWidth="191.0" text="2021:10:23">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="854.0" layoutY="131.0" prefHeight="50.0" prefWidth="191.0" text="09:23">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

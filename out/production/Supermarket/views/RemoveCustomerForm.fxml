@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="630.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RemoveCustomerFormController">
+   <children>
+      <Label layoutX="33.0" layoutY="29.0" prefHeight="49.0" prefWidth="267.0" text="Remove  Customer" textFill="#289009">
+         <font>
+            <Font name="Bodoni MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="6.0" layoutY="91.0" prefHeight="2.0" prefWidth="709.0" />
+      <JFXTextField fx:id="txtCustomerId" focusColor="#147519" labelFloat="true" layoutX="180.0" layoutY="133.0" onAction="#searchCustomerOnAction" prefHeight="31.0" prefWidth="416.0" promptText="Customer Id" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtCustomerTittle" focusColor="#147519" labelFloat="true" layoutX="181.0" layoutY="197.0" prefHeight="31.0" prefWidth="416.0" promptText="Customer Tittle" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtCustomerName" focusColor="#147519" labelFloat="true" layoutX="181.0" layoutY="261.0" prefHeight="31.0" prefWidth="416.0" promptText="Customer Name" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtCustomerAddress" focusColor="#147519" labelFloat="true" layoutX="181.0" layoutY="326.0" prefHeight="31.0" prefWidth="416.0" promptText="Customer Addresss" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtCustomerCity" focusColor="#147519" labelFloat="true" layoutX="181.0" layoutY="389.0" prefHeight="31.0" prefWidth="416.0" promptText="Customer city" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtPostalCode" focusColor="#147519" labelFloat="true" layoutX="181.0" layoutY="512.0" prefHeight="31.0" prefWidth="416.0" promptText="Postal code" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtProvince" focusColor="#147519" labelFloat="true" layoutX="181.0" layoutY="450.0" prefHeight="31.0" prefWidth="416.0" promptText="provience" unFocusColor="BLACK" />
+      <JFXButton fx:id="btnRemoveCustomer" layoutX="215.0" layoutY="564.0" onAction="#RemoveCustomerOnAction" prefHeight="31.0" prefWidth="325.0" style="-fx-background-color: #2ecc71; -fx-border-width: 2px2px 2px 2px; -fx-border-color: black;" text="Remove Customer" />
+   </children>
+</AnchorPane>

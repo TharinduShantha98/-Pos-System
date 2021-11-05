@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerAddress" prefHeight="630.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="49.0" prefWidth="267.0" text="Add Customer" textFill="#289009">
+         <font>
+            <Font name="Bodoni MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbProvince" layoutX="148.0" layoutY="508.0" prefHeight="31.0" prefWidth="416.0" promptText="Province" />
+      <JFXButton fx:id="btnAddCustomer" layoutX="191.0" layoutY="575.0" onAction="#addCustomerOnAction" prefHeight="31.0" prefWidth="325.0" style="-fx-background-color: #2ecc71; -fx-border-width: 2px2px 2px 2px; -fx-border-color: black;" text="Add Customer" />
+      <Separator layoutY="74.0" prefHeight="9.0" prefWidth="718.0" AnchorPane.topAnchor="74.0" />
+      <Pane layoutX="148.0" layoutY="96.0" prefHeight="59.0" prefWidth="416.0">
+         <children>
+            <JFXTextField fx:id="txtCustomerId" focusColor="#147519" labelFloat="true" layoutX="1.0" layoutY="-1.0" onKeyReleased="#validation_key_release" prefHeight="31.0" prefWidth="416.0" promptText="Customer Id" unFocusColor="BLACK" />
+            <Label layoutX="2.0" layoutY="35.0" prefHeight="21.0" prefWidth="223.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="150.0" layoutY="166.0" prefHeight="59.0" prefWidth="416.0">
+         <children>
+            <JFXTextField fx:id="txtCustomerTittle" focusColor="#147519" labelFloat="true" onKeyReleased="#validation_key_release" prefHeight="31.0" prefWidth="416.0" promptText="Customer Tittle" unFocusColor="BLACK" />
+            <Label layoutX="1.0" layoutY="35.0" prefHeight="21.0" prefWidth="204.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="147.0" layoutY="230.0" prefHeight="59.0" prefWidth="416.0">
+         <children>
+            <JFXTextField fx:id="txtCustomerName" focusColor="#147519" labelFloat="true" layoutY="1.0" onKeyReleased="#validation_key_release" prefHeight="31.0" prefWidth="416.0" promptText="Customer Name" unFocusColor="BLACK" />
+            <Label layoutX="2.0" layoutY="36.0" prefHeight="21.0" prefWidth="204.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="145.0" layoutY="304.0" prefHeight="59.0" prefWidth="416.0">
+         <children>
+            <JFXTextField fx:id="txtCustomerAddress" focusColor="#147519" labelFloat="true" layoutX="1.0" layoutY="-1.0" onKeyReleased="#validation_key_release" prefHeight="31.0" prefWidth="416.0" promptText="Customer Addresss" unFocusColor="BLACK" />
+            <Label layoutX="3.0" layoutY="34.0" prefHeight="21.0" prefWidth="204.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="146.0" layoutY="374.0" prefHeight="59.0" prefWidth="416.0">
+         <children>
+            <JFXTextField fx:id="txtCustomerCity" focusColor="#147519" labelFloat="true" layoutY="-1.0" onKeyReleased="#validation_key_release" prefHeight="31.0" prefWidth="416.0" promptText="Customer city" unFocusColor="BLACK" />
+            <Label layoutX="2.0" layoutY="34.0" prefHeight="21.0" prefWidth="204.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="148.0" layoutY="440.0" prefHeight="59.0" prefWidth="416.0">
+         <children>
+            <JFXTextField fx:id="txtPostalCode" focusColor="#147519" labelFloat="true" layoutY="2.0" onKeyReleased="#validation_key_release" prefHeight="31.0" prefWidth="416.0" promptText="Postal code" unFocusColor="BLACK" />
+            <Label layoutX="1.0" layoutY="36.0" prefHeight="21.0" prefWidth="204.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

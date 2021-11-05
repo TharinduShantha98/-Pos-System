@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="620.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllItemFormController">
+   <children>
+      <Label layoutX="21.0" layoutY="21.0" text="All Items" textFill="#11a82d">
+         <font>
+            <Font name="Bodoni MT Black" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-3.0" layoutY="69.0" prefHeight="6.0" prefWidth="704.0" />
+      <TableView fx:id="tblAllItems" layoutX="23.0" layoutY="174.0" prefHeight="416.0" prefWidth="660.0" style="-fx-border-width: 2px 2px 2px 2px; -fx-border-color: green;">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="69.0" text="Item Code" />
+          <TableColumn fx:id="colDescription" prefWidth="97.0" text="Description" />
+            <TableColumn fx:id="colPackSize" prefWidth="86.0" text="Pack Size" />
+            <TableColumn fx:id="colBuyIngPrice" prefWidth="112.0" text="BuyIng Price" />
+            <TableColumn fx:id="colSaleUnitPrice" prefWidth="128.0" text="Sale Unit Price" />
+            <TableColumn fx:id="colItemDiscount" prefWidth="88.0" text="Item Discount" />
+            <TableColumn fx:id="colQty" prefWidth="77.0" text="Qty" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

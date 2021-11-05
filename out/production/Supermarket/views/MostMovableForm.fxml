@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MostMovableFormController">
+   <children>
+      <Label layoutX="260.0" layoutY="23.0" text="Most Movable Item" textFill="#1c3ea4">
+         <font>
+            <Font name="Bodoni MT Black" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="7.0" layoutY="67.0" prefHeight="3.0" prefWidth="859.0" />
+      <TableView fx:id="tblMostMovable" layoutX="68.0" layoutY="89.0" prefHeight="200.0" prefWidth="460.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="109.0" text="Item Code" />
+          <TableColumn fx:id="colOrderCount" prefWidth="174.0" text="Order Count" />
+            <TableColumn fx:id="colMovableQty" prefWidth="174.0" text="Movable Qty" />
+        </columns>
+      </TableView>
+      <BarChart fx:id="movableQty" layoutX="71.0" layoutY="311.0" prefHeight="319.0" prefWidth="752.0">
+        <xAxis>
+          <CategoryAxis id="itemCode" prefHeight="45.0" prefWidth="671.0" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis id="Qty" fx:id="y" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <JFXButton fx:id="btnBack" layoutX="22.0" layoutY="655.0" onAction="#backToMain" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #27ae60;" text="back Main">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

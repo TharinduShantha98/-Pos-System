@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="511.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MonthlyIncomeFormController">
+   <children>
+      <LineChart fx:id="chartMonth" layoutX="11.0" layoutY="211.0" prefHeight="255.0" prefWidth="823.0">
+        <xAxis>
+          <CategoryAxis id="X" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis id="Y" fx:id="y" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <TableView fx:id="tblMonth" layoutX="433.0" layoutY="22.0" prefHeight="180.0" prefWidth="394.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="91.0" text="ItemCode" />
+          <TableColumn fx:id="colSalesQty" prefWidth="129.0" text="Sales Qty" />
+            <TableColumn fx:id="colItemProfit" prefWidth="173.0" text="ItemProfit" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="cmbSelectMonth" labelFloat="true" layoutX="30.0" layoutY="30.0" prefHeight="31.0" prefWidth="251.0" promptText="Select Month" />
+      <JFXButton fx:id="btnBack" layoutX="23.0" layoutY="460.0" onAction="#backToMain" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #27ae60;" text="back Main">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

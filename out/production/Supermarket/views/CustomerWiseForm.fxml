@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="511.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerWiseFormController">
+   <children>
+      <TableView fx:id="tblCustomerWiseProfit" layoutX="434.0" layoutY="28.0" prefHeight="200.0" prefWidth="418.0">
+        <columns>
+          <TableColumn fx:id="colCusId" prefWidth="75.0" text="Cus ID" />
+          <TableColumn fx:id="colOrderQty" prefWidth="142.0" text="Order QTY" />
+            <TableColumn fx:id="colTotalIncome" prefWidth="200.0" text="Total Income" />
+        </columns>
+      </TableView>
+      <LineChart fx:id="chartCusWise" layoutX="25.0" layoutY="246.0" prefHeight="207.0" prefWidth="821.0">
+        <xAxis>
+          <CategoryAxis id="x" fx:id="X" prefHeight="21.0" prefWidth="760.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis id="y" fx:id="y" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <JFXButton fx:id="btnBack" layoutX="25.0" layoutY="464.0" onAction="#backToMain" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #27ae60;" text="back Main">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

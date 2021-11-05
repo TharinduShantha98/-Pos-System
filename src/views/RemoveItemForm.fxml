@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="620.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RemoveItemFormController">
+   <children>
+      <Label layoutX="48.0" layoutY="34.0" text="Remove Items" textFill="#11a82d">
+         <font>
+            <Font name="Bodoni MT Black" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="15.0" layoutY="82.0" prefHeight="6.0" prefWidth="704.0" />
+      <JFXTextField fx:id="txtItemCode" focusColor="#209e1c" labelFloat="true" layoutX="187.0" layoutY="174.0" onAction="#searchItemOnAction" prefHeight="31.0" prefWidth="360.0" promptText="Enter Item Code" unFocusColor="#030000" />
+      <Label layoutX="41.0" layoutY="236.0" prefHeight="31.0" prefWidth="109.0" text="Description" textFill="#1ad4dd">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" layoutX="187.0" layoutY="227.0" prefHeight="31.0" prefWidth="360.0" style="-fx-border-color: Green; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label layoutX="41.0" layoutY="289.0" prefHeight="31.0" prefWidth="109.0" text="Pack Size" textFill="#1ad4dd">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="344.0" prefHeight="31.0" prefWidth="118.0" text="BuyIng Price" textFill="#1ad4dd">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="391.0" prefHeight="31.0" prefWidth="144.0" text="Sale Unit  Price" textFill="#1ad4dd">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="480.0" prefHeight="31.0" prefWidth="144.0" text="Qty" textFill="#1ad4dd">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPackSize" layoutX="185.0" layoutY="274.0" prefHeight="31.0" prefWidth="360.0" style="-fx-border-color: Green; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label fx:id="lblBuyingPrice" layoutX="187.0" layoutY="329.0" prefHeight="31.0" prefWidth="360.0" style="-fx-border-color: Green; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label fx:id="lblSaleUnitPrice" layoutX="187.0" layoutY="383.0" prefHeight="31.0" prefWidth="360.0" style="-fx-border-color: Green; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label fx:id="lblQty" layoutX="187.0" layoutY="478.0" prefHeight="31.0" prefWidth="360.0" style="-fx-border-color: Green; -fx-border-width: 0px 0px 2px 0px;" />
+      <JFXButton layoutX="266.0" layoutY="536.0" onAction="#deleteItemOnAction" prefHeight="43.0" prefWidth="188.0" style="-fx-background-color: #1dd1a1;" text="Delete Item">
+         <graphic>
+            <FontAwesomeIconView fill="#cd1b1b" glyphName="TRASH" size="30" text="  " />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="41.0" layoutY="435.0" prefHeight="31.0" prefWidth="144.0" text="Item Discount" textFill="#1ad4dd">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItemDiscount" layoutX="187.0" layoutY="432.0" prefHeight="31.0" prefWidth="360.0" style="-fx-border-color: Green; -fx-border-width: 0px 0px 2px 0px;" />
+   </children>
+</AnchorPane>
